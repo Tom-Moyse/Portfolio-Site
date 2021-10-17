@@ -1,10 +1,15 @@
-import './App.css';
+import { useState } from 'react';
+import './css/main.css';
+import Navbar from './components/Navbar';
 
 function App() {
-  return (
-    <div className="App">
+  // Where true is dark theme and false is light them
+  const [viewModeDark, setViewMode] = useState(true)
 
-    </div>
+  return (
+    <header className="startView">
+      <Navbar dark={ viewModeDark } setDark={ setViewMode }/>
+    </header>
   );
 }
 
