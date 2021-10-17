@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="10.544 -3.33 101.14 76.582" xmlns="http://www.w3.org/2000/svg">
+  <g style="" transform="matrix(0.729662, 0, 0, 1.152542, -228.649307, -80.359047)">
+    <g transform="matrix(1, 0, 0, 1, 197.741043, 19.741142)">
+      <g>
+        <rect x="134.85" y="60.251" width="24.417" height="66.446" style="paint-order: stroke markers; fill: rgb(255, 255, 255);" transform="matrix(1, 0, -0.061123, 1, 37.937447, -13.158093)" rx="1.331" ry="1.331"/>
+        <rect x="122.249" y="59.378" width="22.135" height="65.483" style="paint-order: stroke markers; fill: rgb(255, 255, 255);" transform="matrix(-1, 0, 0.393956, 1, 301.57138, -12.285095)" rx="1.522" ry="1.522"/>
+        <rect x="-89.081" y="-60.886" width="16.13" height="67.146" style="paint-order: stroke markers; fill: rgb(255, 255, 255);" transform="matrix(-0.368891, -0.929473, 1.075408, -0.001186, 168.639099, -20.705656)" ry="1.331" rx="1.331"/>
+        <rect x="-122.249" y="-59.378" width="22.135" height="65.483" style="paint-order: stroke markers; fill: rgb(255, 255, 255);" transform="matrix(1, 0, -0.393956, 1, 330.804077, 106.470901)" rx="1.522" ry="1.522"/>
+        <rect x="-134.85" y="-60.251" width="24.417" height="66.446" style="paint-order: stroke markers; fill: rgb(255, 255, 255);" transform="matrix(1, 0, -0.061123, -1, 375.435489, 53.287903)" rx="1.331" ry="1.331"/>
+      </g>
+    </g>
+  </g>
+</svg>
