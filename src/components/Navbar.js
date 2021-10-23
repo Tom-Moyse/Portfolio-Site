@@ -11,11 +11,11 @@ const Navbar = ({ dark, setDark }) => {
     return (
         <div className='navbar-container'>
             <img src={dark ? logow : logob} alt='logo' id='nav-logo'/>
-            <nav class='navbar'>
-                <ul class='navbar-list'>
-                    <li><a href="#projects" className="nav-link">Projects</a></li>
-                    <li><a href className="nav-link">Contact</a></li>
-                    <li><a href className="nav-link" id="sun-moon" onClick={ toggleDark }> {
+            <nav className='navbar'>
+                <ul className='navbar-list'>
+                    <li className="example"><a href="#projects" className="nav-link hover hover-1">Projects</a></li>
+                    <li className="example"><a href className="nav-link hover hover-1">Contact</a></li>
+                    <li className="example"><a href className="nav-link" id="sun-moon" onClick={ toggleDark }> {
                         dark ? <FaSun size={30} color={'#d3d7de'}/> : <FaMoon size={30} color={'#55585c'}/>
                     } </a></li>
                 </ul>
