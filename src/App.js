@@ -27,7 +27,7 @@ function App() {
     <header className={`startView ${ viewModeDark ? 'startViewDark' : 'startViewLight' }`}>
       <About showAbout={ showAbout } toggleAbout={ toggleAbout } toggleAnimation={ toggleAboutAnimation } showAnimation={ showAboutAnimation }/>
       <Squiggles dark={ viewModeDark }/>
-      <Navbar dark={ viewModeDark } setDark={ setViewMode }/>
+      <Navbar dark={ viewModeDark } setDark={ setViewMode } showAbout={ toggleAbout }/>
       <CentralText dark={ viewModeDark } showAbout={ toggleAbout }/>
       <img className='centerImage' src={viewModeDark ? logow : logob}></img>
     </header>
