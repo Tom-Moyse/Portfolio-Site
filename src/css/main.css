@@ -322,7 +322,18 @@ h3{
 	margin-left: 10%;
 	color: #101a2b;
 	z-index: 2;
+	
+}
+
+.aboutAnimateIn{
 	animation: addShadow;
+	animation-fill-mode: forwards;
+	animation-duration: 0.5s;
+	animation-delay: 0.7s;
+}
+
+.aboutAnimateOut{
+	animation: removeShadow;
 	animation-fill-mode: forwards;
 	animation-duration: 0.5s;
 	animation-delay: 0.7s;
@@ -334,6 +345,15 @@ h3{
 	}
 	100%{
 		box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+	}
+}
+
+@keyframes removeShadow {
+	0%{
+		box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+	}
+	100%{
+		box-shadow: 0;
 	}
 }
 
@@ -355,28 +375,128 @@ h3{
 	}
 }
 
+@keyframes slideToTop {
+	0% {
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(-100vh);
+	}
+}
+
+@keyframes slideToBottom {
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(100vh);
+	}
+}
+
 .leftAbout{
 	width: 50%;
 	height: 100%;
 	position: absolute;
-	animation: slideFromTop;
-	animation-duration: 0.5s;
 	background-color: #d3d7de;
 	padding: 10px;
 	box-sizing: border-box;
 }
+
+.leftAnimateIn{
+	animation: slideFromTop;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.leftAnimateOut{
+	animation: slideToTop;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
 .rightAbout{
 	color: white;
 	width:50%;
 	height: 100%;
 	left: 50%;
 	position: absolute;
+	background-color: #101a2b;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.rightAnimateIn{
 	transform: translateY(100vh);
 	animation: slideFromBottom;
 	animation-delay: 0.2s;
 	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
-	background-color: #101a2b;
-	padding: 10px;
+}
+
+.rightAnimateOut{
+	animation: slideToBottom;
+	animation-delay: 0.2s;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+h2{
+	font-weight: bolder;
+    font-size: 2em;
+}
+p{
+	font-size: 1.1em;
+}
+
+.aboutContent{
+	padding:10%;
+}
+
+.aboutContent h3{
+	margin-bottom: 10%;
+}
+
+strong{
+	color:rgb(255, 72, 0)
+}
+
+.iconBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+	color: white;
+	transition: 0.2s;
+}
+
+.iconBox:hover{
+	color: #55585c;
+}
+
+.aboutContent ul{
+	width: 100%;
+}
+
+.aboutContent ul li{
+	width: 50%;
 	box-sizing: border-box;
+	padding: 10px;
+	display: inline-block;
+}
+
+figcaption{
+	margin-top: 10px;
+}
+
+.exitButton{
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	color: white;
+	transition: 0.3s;
+}
+
+.exitButton:hover{
+	color: red
 }

@@ -7,26 +7,31 @@ import logow from './img/logo-white.svg';
 import logob from './img/logo-black.svg';
 import 'animate.css';
 import Squiggles from './components/Squiggles';
+import Projects from './components/Projects';
 
 function App() {
   // Where true is dark theme and false is light them
   const [viewModeDark, setViewMode] = useState(true)
   const [showAbout, toggleAbout] = useState(false)
+  const [showAboutAnimation, toggleAboutAnimation] = useState(false)
 
-
+  onanimationend = (e) =>{
+    if (e.animationName === "slideToBottom"){
+      toggleAbout(false);
+      toggleAboutAnimation(false);
+    }
+  }
 
   return (
     <>
     <header className={`startView ${ viewModeDark ? 'startViewDark' : 'startViewLight' }`}>
-      {showAbout ? <About /> : null}
+      <About showAbout={ showAbout } toggleAbout={ toggleAbout } toggleAnimation={ toggleAboutAnimation } showAnimation={ showAboutAnimation }/>
       <Squiggles dark={ viewModeDark }/>
       <Navbar dark={ viewModeDark } setDark={ setViewMode }/>
       <CentralText dark={ viewModeDark } showAbout={ toggleAbout }/>
       <img className='centerImage' src={viewModeDark ? logow : logob}></img>
     </header>
-    <main className='mainView' id='projects'>
-      <p>Hello</p>
-    </main>
+    <Projects showAbout={ showAbout }/>
     </>
   );
 }
