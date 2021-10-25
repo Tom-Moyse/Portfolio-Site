@@ -16,7 +16,7 @@ const Navbar = ({ dark, setDark, showAbout }) => {
                     <li className="example"><a href="#projects" className="nav-link hover hover-1">Projects</a></li>
                     <li className="example"><a href className="nav-link hover hover-1" onClick={  () => {showAbout(true)}  }>Contact</a></li>
                     <li className="example"><a href className="nav-link" id="sun-moon" onClick={ toggleDark }> {
-                        dark ? <FaSun size={30} color={'#d3d7de'}/> : <FaMoon size={30} color={'#55585c'}/>
+                        dark ? <FaMoon size={30} color={'#d3d7de'}/> : <FaSun size={30} color={'#55585c'}/>
                     } </a></li>
                 </ul>
             </nav>

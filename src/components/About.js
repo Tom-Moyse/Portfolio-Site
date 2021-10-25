@@ -20,7 +20,7 @@ const About = ({ showAbout, toggleAbout, toggleAnimation, showAnimation }) => {
                         Currently I'm focusing on improving my web and game development skills using <strong>React</strong> and <strong>Unity</strong> respectively.<br />
                         Outside of technical skills I am currently focused on learning Piano and Japanese.
                         When not focused on learning I enjoy playing video games, badminton and climbing.<br /><br />
-                        Currently I am looking for <strong>placement year</strong> oppurtunities - feel free to <strong>contact me</strong> if you have any offers in this regard.
+                        Currently I am looking for <strong>placement year</strong> opportunities - feel free to <strong>contact me</strong> if you have any offers in this regard.
                     </p>
                 </div> 
             </div>
