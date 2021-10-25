@@ -1,17 +1,22 @@
 import React from 'react'
 
-const LoadAnimation = () => {
-    return (
-        <div className='backgroundBox'>
-            <div className='rectangles'>
-                <div className='rect'></div>
-                <div className='rect'></div>
-                <div className='rect'></div>
-                <div className='rect'></div>
-                <div className='rect'></div>
+const LoadAnimation = ({ display, slideOut }) => {
+    if (display) {
+        return (
+            <div className={`backgroundBox ${slideOut ? 'slideOut' : ''}`}>
+                <div className='rectangles'>
+                    <div className={`rect ${slideOut ? 'stopAnimation' : ''}`}></div>
+                    <div className={`rect ${slideOut ? 'stopAnimation' : ''}`}></div>
+                    <div className={`rect ${slideOut ? 'stopAnimation' : ''}`}></div>
+                    <div className={`rect ${slideOut ? 'stopAnimation' : ''}`}></div>
+                    <div className={`rect ${slideOut ? 'stopAnimation' : ''}`}></div>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
+    else{
+        return null;
+    }
 }
 
 export default LoadAnimation

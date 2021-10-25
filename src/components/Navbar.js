@@ -13,11 +13,11 @@ const Navbar = ({ dark, setDark, showAbout }) => {
             <img src={dark ? logow : logob} alt='logo' id='nav-logo'/>
             <nav className='navbar'>
                 <ul className='navbar-list'>
-                    <li className="example"><a href="#projects" className="nav-link hover hover-1">Projects</a></li>
-                    <li className="example"><a href className="nav-link hover hover-1" onClick={  () => {showAbout(true)}  }>Contact</a></li>
-                    <li className="example"><a href className="nav-link" id="sun-moon" onClick={ toggleDark }> {
+                    <li className="nav-button"><a href="#projects" className="nav-link hover hover-1">Projects</a></li>
+                    <li className="nav-button"><p className="nav-link hover hover-1" onClick={  () => {showAbout(true)}  }>Contact</p></li>
+                    <li className="nav-button"><p className="nav-link" id="sun-moon" onClick={ toggleDark }> {
                         dark ? <FaMoon size={30} color={'#d3d7de'}/> : <FaSun size={30} color={'#55585c'}/>
-                    } </a></li>
+                    } </p></li>
                 </ul>
             </nav>
         </div>

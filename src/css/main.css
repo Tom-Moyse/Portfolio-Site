@@ -216,11 +216,11 @@ h3{
 }
 
 
-.example .hover {
+.nav-button .hover {
     transition: all 0.2s ease-in-out;
     position: relative;
 }
-.example .hover:before, .example .hover:after {
+.nav-button .hover:before, .nav-button .hover:after {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -232,10 +232,10 @@ h3{
     opacity: 0;
     background-color: rgb(255, 72, 0);
 }
-.example .hover.hover-1:before, .example .hover.hover-1:after {
+.nav-button .hover.hover-1:before, .nav-button .hover.hover-1:after {
     left: 0;
 }
-.example:hover .hover:before, .example:hover .hover:after {
+.nav-button:hover .hover:before, .nav-button:hover .hover:after {
     width: 100%;
     opacity: 1;
 } 
@@ -264,6 +264,13 @@ h3{
 
 .fadeIn {
 	animation: fadeIn;
+}
+
+.pageFadeIn {
+	opacity: 0;
+	animation: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 .squiggles {
@@ -548,7 +555,7 @@ figcaption{
 	transition: bottom 0.3s;
 }
 
-@keyframes slide-from-right {
+@keyframes slide-from-left {
 	0%{
 		transform: translateX(-100%);
 	}
@@ -563,8 +570,8 @@ figcaption{
 	width: 100%;
 	height: 100%;
 	background-color: lightseagreen;
-	animation: slide-from-right;
-	animation-duration: 1s;
+	animation: slide-from-left;
+	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
 	display: flex;
 	justify-content: center;
@@ -588,6 +595,21 @@ figcaption{
 	}
 }
 
+@keyframes slide-to-left {
+	0%{
+		transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(-100%);
+	}
+}
+
+.slideOut{
+	animation: slide-to-left;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
 .rect{
 	width: 0%;
 	height: 12%;
@@ -596,18 +618,22 @@ figcaption{
 	background-color: white;
 	animation: animate-width;
 	animation-duration: 1s;
-	animation-delay: 1s;
-	
+	animation-delay: 0.5s;
+	animation-iteration-count: 3;	
 }
 .rect:nth-child(2){
-	animation-delay: 1.1s;
+	animation-delay: 0.6s;
 }
 .rect:nth-child(3){
-	animation-delay: 1.2s;
+	animation-delay: 0.7s;
 }
 .rect:nth-child(4){
-	animation-delay: 1.3s;
+	animation-delay: 0.8s;
 }
 .rect:nth-child(5){
-	animation-delay: 1.4s;
+	animation-delay: 0.9s;
+}
+
+.stopAnimation{
+	animation: none !important;
 }

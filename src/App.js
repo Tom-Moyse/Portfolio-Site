@@ -5,24 +5,20 @@ import LoadAnimation from './components/LoadAnimation';
 
 function App() {
   const [playingLoadAnim, playLoadAnim] = useState(true)
+  const [slideOut, toggleSlideOut] = useState(false)
+  const [endAnim, setEndAnim] = useState(false)
 
-  onanimationend = (e) =>{
-    console.log(e)
-    var count = 0;
-    if (e.animationName === "animate-width"){
-        
-        count++
-    }
-    if (count > 15){
+  onanimationiteration = (e) =>{
+    if (e.elapsedTime === 2){
+      toggleSlideOut(true)
       playLoadAnim(false)
-      console.log('hi')
-    }
+    } 
   }
 
   return (
     <>
-      <LoadAnimation display = {playingLoadAnim}/>
-      <MainPage display = {!playingLoadAnim}/>
+      <LoadAnimation display = {!endAnim} slideOut = {slideOut}/>
+      <MainPage display = {!playingLoadAnim} endLoad = {setEndAnim}/>
     </>
   )
 }
