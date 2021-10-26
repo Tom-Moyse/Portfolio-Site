@@ -4,9 +4,9 @@ import MainPage from './MainPage';
 import LoadAnimation from './components/LoadAnimation';
 
 function App() {
-  const [playingLoadAnim, playLoadAnim] = useState(true)
+  const [playingLoadAnim, playLoadAnim] = useState(false)
   const [slideOut, toggleSlideOut] = useState(false)
-  const [endAnim, setEndAnim] = useState(false)
+  const [endAnim, setEndAnim] = useState(true)
 
   onanimationiteration = (e) =>{
     if (e.elapsedTime === 2){
