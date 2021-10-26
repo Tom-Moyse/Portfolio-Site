@@ -3,7 +3,7 @@ import './css/main.css';
 import Navbar from './components/Navbar';
 import CentralText from './components/CentralText';
 import About from './components/About';
-import logow from './img/logo-white.svg';
+import logow from './img/logo.svg';
 import logob from './img/logo-black.svg';
 import 'animate.css';
 import Squiggles from './components/Squiggles';

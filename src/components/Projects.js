@@ -9,21 +9,29 @@ const Projects = ({ showAbout }) => {
                     <h3>Keeping on</h3>
                 </div>
                 <div className='projectContainer'>
-                    <div className='projectRow'>
-                        <div className='project'>
-                            Yo
-                        </div>
-                    </div>
-                    <div className='projectRow'>
-                        <div className='project'>
-                            Yo 2
-                        </div>
-                    </div>
-                    <div className='projectRow'>
-                        <div className='project'>
-                            Yo 3
-                        </div>
-                    </div>
+                    <ul className='projectList'>
+                        <li className='project'>
+                            <a className='projectLink'>
+                                <div className='projectContent'>
+                                    Some Content
+                                </div>
+                            </a>
+                        </li>
+                        <li className='project'>
+                            <a className='projectLink'>
+                                <div className='projectContent'>
+                                    Some More Content
+                                </div>
+                            </a>
+                        </li>
+                        <li className='project'>
+                            <a className='projectLink'>
+                                <div className='projectContent'>
+                                    Yet more content
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </main>
         )
