@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="10.544 -3.33 101.14 76.582" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="147.059" y1="59.378" x2="147.059" y2="124.861" id="gradient-0" gradientTransform="matrix(1, 0, 0, 1.014706, 0, 0)">
+      <stop offset="0" style="stop-color: rgba(85, 127, 218, 1)"/>
+      <stop offset="1" style="stop-color: rgba(36, 77, 165, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-122.642" y1="-59.378" x2="-122.642" y2="6.105" id="gradient-1" gradientTransform="matrix(0.906556, 0, 0, 1, 0.000123, 0.000003)">
+      <stop offset="0" style="stop-color: rgba(85, 127, 218, 1)"/>
+      <stop offset="1" style="stop-color: rgba(36, 77, 165, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="97.146" y1="78.345" x2="97.146" y2="164.745" id="gradient-4" gradientTransform="matrix(0.260212, 1.130655, -0.790319, -0.012075, -36.691895, -113.994353)">
+      <stop offset="0" style="stop-color: rgba(85, 127, 218, 1)"/>
+      <stop offset="1" style="stop-color: rgba(36, 77, 165, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="-122.642" y1="-59.378" x2="-122.642" y2="6.105" id="gradient-2" gradientTransform="matrix(0.906556, 0, 0, 1, 0.000122, 0.000001)">
+      <stop offset="0" style="stop-color: rgba(85, 127, 218, 1)"/>
+      <stop offset="1" style="stop-color: rgba(36, 77, 165, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="147.059" y1="59.378" x2="147.059" y2="124.861" id="gradient-3" gradientTransform="matrix(-1.000087, -0.001465, 0.003715, -1.0147, 293.378967, 186.681789)">
+      <stop offset="0" style="stop-color: rgba(85, 127, 218, 1)"/>
+      <stop offset="1" style="stop-color: rgba(36, 77, 165, 1)"/>
+    </linearGradient>
+  </defs>
+  <rect x="134.85" y="60.251" width="24.417" height="66.446" style="paint-order: stroke markers; fill: url(#gradient-0);" transform="matrix(0.729662, 0, -0.044599, 1.152542, -56.683669, -72.771807)" rx="1.331" ry="1.331"/>
+  <rect x="-122.249" y="-59.378" width="22.135" height="65.483" style="paint-order: stroke markers; fill: url(#gradient-1);" transform="matrix(-0.729662, 0, 0.287455, 1.152542, -8.583934, 65.105634)" rx="1.522" ry="1.522"/>
+  <rect x="-89.081" y="-60.886" width="16.13" height="67.146" style="paint-order: stroke markers; fill: url(#gradient-4);" transform="matrix(-0.269166, -1.071257, 0.784684, -0.001367, 38.68436, -81.47069)" ry="1.331" rx="1.331"/>
+  <rect x="-122.249" y="-59.378" width="22.135" height="65.483" style="paint-order: stroke markers; fill: url(#gradient-2);" transform="matrix(0.729662, 0, -0.287455, 1.152542, 157.009983, 65.105634)" rx="1.522" ry="1.522"/>
+  <rect x="134.85" y="60.251" width="24.417" height="66.446" style="paint-order: stroke markers; fill: url(#gradient-3);" transform="matrix(0.729662, 0, -0.044599, -1.152542, -1.839737, 142.693609)" rx="1.331" ry="1.331"/>
+</svg>

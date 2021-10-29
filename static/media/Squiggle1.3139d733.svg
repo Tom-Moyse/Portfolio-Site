@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 111.241 111" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1, 0, 0, 1, 0, -68.617889)">
+    <g transform="matrix(1, 0, 0, 1, -171.62915, -0.900421)">
+      <rect x="98.203" y="94.422" width="78.232" height="18.81" style="fill: rgb(0, 242, 255); paint-order: fill; fill-rule: nonzero;" rx="9.405" ry="9.405" transform="matrix(0.707127, -0.707087, 0.707087, 0.707127, 35.422585, 127.504852)"/>
+      <rect x="-98.203" y="-94.422" width="78.232" height="18.81" style="fill: rgb(0, 242, 255); paint-order: fill; fill-rule: nonzero;" rx="9.405" ry="9.405" transform="matrix(-0.707127, -0.707087, -0.707087, 0.707127, 146.663126, 122.165428)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, -1, -171.62915, 249.1362)">
+      <rect x="98.203" y="94.422" width="78.232" height="18.81" style="fill: rgb(0, 242, 255); paint-order: fill; fill-rule: nonzero;" rx="9.405" ry="9.405" transform="matrix(0.707127, -0.707087, 0.707087, 0.707127, 35.422585, 127.504852)"/>
+      <rect x="-98.203" y="-94.422" width="78.232" height="18.81" style="fill: rgb(0, 242, 255); paint-order: fill; fill-rule: nonzero;" rx="9.405" ry="9.405" transform="matrix(-0.707127, -0.707087, -0.707087, 0.707127, 146.663126, 122.165428)"/>
+    </g>
+  </g>
+</svg>
