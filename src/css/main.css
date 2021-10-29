@@ -742,3 +742,42 @@ footer{
 	padding: 5%;
 	text-align: center;
 }
+
+.backContainer{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	padding-top: 2%;
+}
+
+.imgContainer{
+	position: relative;
+	width: 100%;
+	z-index: 3;
+	text-align: center;
+}
+
+.homeLink{
+	width: 10%;
+	transform: translateX(-3%);
+}
+
+.homeLinkText{
+	position: absolute;
+	display: block;
+	z-index: 2;
+	color: white;
+	opacity: 0;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	transition: 0.5s;
+	height: 100%;
+	padding-top: 0px;
+}
+
+.homeLinkText:hover{
+	padding-top: 15%;
+	opacity: 1;
+}

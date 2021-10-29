@@ -9,9 +9,9 @@ function App() {
   return (
     <Switch>
         <Route exact path='/'><PageLoader key={uuid()} PageComponent={MainPage}/></Route>
-        <Route exact path='/museScrape'><PageLoader PageComponent={NotImplementedPage}/></Route>
-        <Route exact path='/gameSystems'><PageLoader PageComponent={NotImplementedPage}/></Route>
-        <Route exact path='/portfolioProduction'><PageLoader PageComponent={NotImplementedPage}/></Route>
+        <Route exact path='/museScrape'><PageLoader key={uuid()} PageComponent={NotImplementedPage}/></Route>
+        <Route exact path='/gameSystems'><PageLoader key={uuid()} PageComponent={NotImplementedPage}/></Route>
+        <Route exact path='/portfolioProduction'><PageLoader key={uuid()} PageComponent={NotImplementedPage}/></Route>
     </Switch>
 )
 }
