@@ -15,13 +15,13 @@ const Projects = ({ showAbout }) => {
                 <div className='projectContainer'>
                     <ul className='projectList'>
                         <li className='project'>
-                            <Project head={'Musescore To PDF Scraper'} subhead={'Automating the mundane'} newstyle={{'backgroundImage':`url(${museBack})`}}/>
+                            <Project linkDest='/museScrape' head={'Musescore To PDF Scraper'} subhead={'Automating the mundane'} newstyle={{'backgroundImage':`url(${museBack})`}}/>
                         </li>
                         <li className='project'>
-                            <Project head={'Game systems experiment'} subhead={'From adaptive difficulty and ray casting to procedural generation'} newstyle={{'backgroundImage':`url(${gameBack})`, 'backgroundPosition':'1%'}}/>
+                            <Project linkDest='/gameSystems' head={'Game systems experiment'} subhead={'From adaptive difficulty and ray casting to procedural generation'} newstyle={{'backgroundImage':`url(${gameBack})`, 'backgroundPosition':'1%'}}/>
                         </li>
                         <li className='project'>
-                            <Project head={'Portfolio Website'} subhead={'Showcasing my Work'} newstyle={{'backgroundImage':`url(${logow})`, 'backgroundColor':'#0b1320', 'backgroundPosition':'50%', backgroundSize:'30%'}}/>
+                            <Project linkDest='/portfolioProduction' head={'Portfolio Website'} subhead={'Showcasing my Work'} newstyle={{'backgroundImage':`url(${logow})`, 'backgroundColor':'#0b1320', 'backgroundPosition':'50%', backgroundSize:'30%'}}/>
                         </li>
                     </ul>
                 </div>

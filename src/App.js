@@ -1,26 +1,19 @@
 import React from 'react'
-import { useState } from 'react';
-import MainPage from './MainPage';
-import LoadAnimation from './components/LoadAnimation';
+import MainPage from './MainPage'
+import PageLoader from './components/PageLoader'
+import NotImplementedPage from './components/NotImplementedPage'
+import { Switch, Route } from 'react-router'
+import { uuid } from 'uuidv4'
 
 function App() {
-  const [playingLoadAnim, playLoadAnim] = useState(false)
-  const [slideOut, toggleSlideOut] = useState(false)
-  const [endAnim, setEndAnim] = useState(true)
-
-  onanimationiteration = (e) =>{
-    if (e.elapsedTime === 2){
-      toggleSlideOut(true)
-      playLoadAnim(false)
-    } 
-  }
-
   return (
-    <>
-      <LoadAnimation display = {!endAnim} slideOut = {slideOut}/>
-      <MainPage display = {!playingLoadAnim} endLoad = {setEndAnim}/>
-    </>
-  )
+    <Switch>
+        <Route exact path='/'><PageLoader key={uuid()} PageComponent={MainPage}/></Route>
+        <Route exact path='/museScrape'><PageLoader PageComponent={NotImplementedPage}/></Route>
+        <Route exact path='/gameSystems'><PageLoader PageComponent={NotImplementedPage}/></Route>
+        <Route exact path='/portfolioProduction'><PageLoader PageComponent={NotImplementedPage}/></Route>
+    </Switch>
+)
 }
 
 export default App;
