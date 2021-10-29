@@ -15,7 +15,7 @@ const PageLoader = ({ PageComponent }) => {
 
     onanimationiteration = (e) => {
         console.log(e)
-        if (e.animationName === "animate-width" && e.elapsedTime % 2 == 1 && !slideOut){
+        if (e.animationName === "animate-width" && e.elapsedTime % 2 === 1 && !slideOut){
             toggleAnimation();
         }  
     }

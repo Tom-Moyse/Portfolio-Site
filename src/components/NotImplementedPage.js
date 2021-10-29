@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import Squiggles from './Squiggles'
 import logo from '../img/logo-white.svg';
 import { Link } from 'react-router-dom';
