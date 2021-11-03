@@ -36,7 +36,7 @@ const About = ({ showAbout, toggleAbout, toggleAnimation, showAnimation }) => {
                                 <figcaption>Email</figcaption>
                             </figure>
                         </a></li>
-                        <li><a href="www.linkedin.com/in/tom-moyse-88765a144">
+                        <li><a href="https://linkedin.com/in/tom-moyse-88765a144">
                             <figure className='iconBox'>
                                 <FaLinkedin size={'30%'}/>
                                 <figcaption>LinkedIn</figcaption>
